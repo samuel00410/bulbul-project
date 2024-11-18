@@ -2,8 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Tailwind CSS 的 Components Layer */
 @layer components {
-  
+  .bird-icon {
+    @apply relative w-[35px] h-[35px] sm:w-[100px] sm:h-[100px] border border-gray-300 bg-[#FFFFFF] rounded-full shadow-lg;
+  }
+
+  .bird-head {
+    @apply absolute top-[15%] right-[25%]  sm:top-[26%] sm:right-[30%] w-6 h-3 sm:w-12 sm:h-5 bg-black ;
+    border-radius: 100% 50% 10% 0;
+    clip-path: ellipse(85% 35% at 45% 15%); 
+    transform: rotate(360deg);
+  }
+
+  .bird-eye {
+    @apply absolute top-[35%] right-[40%] sm:top-[40%] sm:left-1/2 w-[5px] h-[5px] sm:w-[10px] sm:h-[10px] bg-black rounded-full;
+  }
+
+  .bird-mouth {
+    @apply absolute top-[30%] right-[10%] sm:top-[38%] sm:right-[15%] w-[8px] h-[6px] sm:w-[14px] sm:h-[7px] bg-black;
+    border-top-right-radius: 100%;
+    transform: rotate(-10deg);
+  }
+
+  .bird-body {
+    @apply absolute bottom-[30%] right-[10%] sm:bottom-[38%] sm:right-[25%] w-6 h-3 sm:w-12 sm:h-5 bg-black ;
+    border-radius: 100% 50% 10% 0;
+    clip-path: ellipse(85% 35% at 45% 5%); 
+    transform: rotate(180deg);
+  }
 }

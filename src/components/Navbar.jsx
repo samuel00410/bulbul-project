@@ -47,7 +47,13 @@ const Navbar = () => {
 
         {/* 鳥icon */}
         <div className="w-[35px] h-[35px] sm:w-[100px] sm:h-[100px] sm:absolute sm:top-10 -right-12">
-          <img src={logo} alt="logo" />
+          {/* <img src={logo} alt="logo" /> */}
+          <div className="bird-icon">
+            <div className="bird-head"></div>
+            <div className="bird-eye"></div>
+            <div className="bird-mouth"></div>
+            <div className="bird-body"></div>
+          </div>
         </div>
       </div>
 
