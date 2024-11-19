@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
 
       {/* 手機選單 */}
-      {isMenuOpen && <MenuOverLay links={NavLinks} />}
+      {isMenuOpen && <MenuOverLay links={NavLinks} isMenuOpen={isMenuOpen} />}
     </nav>
   );
 };
